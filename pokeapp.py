@@ -7,7 +7,7 @@ import streamlit as st
 
 @st.cache_data
 def pokedata():
-    poke_df = pd.read_csv("/STAT 386/pokemon-blogpost-code/pokemondata.csv")
+    poke_df = pd.read_csv("pokemondata.csv")
     return poke_df
 
 poke_data = pokedata()
